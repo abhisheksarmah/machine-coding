@@ -1,0 +1,10 @@
+.reply-section {
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 32px;
+}
+
+.comment-author {
+    flex: 1; 
+    margin: 0;
+}

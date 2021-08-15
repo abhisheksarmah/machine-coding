@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <div id="logo">Online Food Delivery</div>
+            <div id="search">
+                <input type="text" placeholder="Search restaurants..." onkeyup="searchRestaurants(this)">  
+            </div>
+        </header>
+        <div id="main">
+            <article>
+                <div class="form-wrapper">
+                    <div class="form-row">
+                        <label for="sort">Sort By</label>
+                        <select name="sort" id="sort" onchange="sortRestaurants()">
+                            <option disabled selected>Select</option>
+                            <option value="id">ID</option>
+                            <option value="eta">ETA</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="filter">Filter By Location</label>
+                        <select name="filter" id="filter" onchange="filterRestaurants('location')">
+                            <option disabled selected>Select</option>
+                            <option value="peoli Nagar">peoli Nagar</option>
+                            <option value="moran">moran</option>
+                            <option value="teok">teok</option>
+                            <option value="shilpukhuri">shilpukhuri</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <button onclick="getBookmarked()">Favourites</button>
+                </div>
+                </div>
+                <div id="generate-view" class="generate-view"></div>
+            </article>
+            <nav>Nav</nav>
+            <aside>Aside</aside>
+        </div>
+        <footer>Footer</footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.1/underscore-umd-min.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
