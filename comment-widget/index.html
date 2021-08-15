@@ -3,15 +3,21 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section>
-            <div id="comment-box">
-                <form onsubmit="submitComment(this)">
-                    <textarea style="display: block; width: 100%; margin-bottom: 16px;"></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-            <ul id="comment-area"></ul>
-        </section>
+        <header>Comment App</header>
+        <div id="main">
+            <article>
+                <div id="comment-form-wrapper">
+                    <form onsubmit="submitComment(this)" class="form-wrapper">
+                        <textarea style="display: block; width: 100%; margin-bottom: 16px;"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <ul id="comment-area"></ul>
+            </article>
+            <nav>Nav</nav>
+            <aside>Aside</aside>
+        </div>
+        <footer>Footer</footer>
         <script src="./index.js" type="text/javascript"></script>
     </body>
 </html>

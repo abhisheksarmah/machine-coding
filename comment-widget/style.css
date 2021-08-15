@@ -1,10 +1,101 @@
-.reply-section {
-    display: flex; 
-    flex-direction: column; 
-    margin-bottom: 32px;
+* {
+    box-sizing: border-box;
 }
 
-.comment-author {
-    flex: 1; 
+body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer, article, nav, aside {
+    padding: .5em;
+}
+
+header, footer {
+    height: 10vh;
+    background: yellowgreen;
+}
+
+#main {
+    display: flex;
+}
+
+nav, aside {
+    flex: 0 0 20vw;
+    background: beige;
+}
+
+article {
+    flex: 1;
+}
+
+nav {
+    order: -1;
+}
+
+@media screen and (max-width: 576px) {
+    #main {
+        flex-direction: column;
+    }
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+    background: #f6f3eb;
+    padding: 1em;
+    border-radius: 3px;
+    margin: 0 0 .5em;
+}
+
+.media-object {
+    margin-right: .4em;
+    font-size: 4em;
+}
+
+.media-body {
+    flex: 1;
+}
+
+.media-heading {
+    margin: 0 0 .5em;
+}
+
+.media-footer {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.media-footer > a {
+    margin-right: .5em;
+    font-size: small;
+}
+
+ul {
+    list-style-type: none;
+}
+
+form {
+    margin: 0;
+}
+
+.form-wrapper > textarea,
+.form-wrapper > button {
+    padding: .5em;
+}
+
+.form-wrapper > textarea {
+    height: 10vh;
+}
+
+.form-wrapper > button {
+    background: gray;
+    color: white;
+    border: 0;
+}
+
+#comment-form-wrapper {
+    padding: 1em;
+    background: #f6f3eb;
 }
